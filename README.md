@@ -27,11 +27,3 @@ Bank X also want to allow Bank Z to be able debit or credit the customer’s acc
 by Bank Z on behalf of Bank X. Bank Z should be able to send a single immediate transaction or a list of transactions 
 which should be processed immediately. Bank Z should be able to send Bank X a list of transactions that they processed 
 on behalf of Bank X at the end of the business day for reconciliation (Note: this is an offline process).
-
-## Technical
-
-Please run a postgres database in Docker before starting this app as follows:
-
-```bash
-docker run --name bankx -e POSTGRES_PASSWORD=bankx -e POSTGRES_USER=bankx -e POSTGRES_DB=bankx -d -p 5432:5432 postgres
-```
