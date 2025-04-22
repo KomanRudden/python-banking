@@ -1,0 +1,55 @@
+# Byte-compiled Python files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Unit test / coverage reports
+.coverage
+*.cover
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.coveragerc
+
+# Pytest cache
+.pytest_cache/
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Django specific
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+.env.local
+

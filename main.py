@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from models import Customer, Account, Transaction
 from store import global_store
 from bankz import MockClient
@@ -9,6 +10,7 @@ import re
 # Flask is a lightweight web application framework in Python. 
 # Flask provides tools, libraries, and technologies to build web applications, including routing, request handling, and templating.
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 bankz_client = MockClient()  # Global client for simplicity
 
 @app.route('/api/customers', methods=['POST'])
